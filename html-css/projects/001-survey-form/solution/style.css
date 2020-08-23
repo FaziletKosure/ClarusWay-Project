@@ -7,15 +7,11 @@ body {
   background-color: rgba(46, 49, 49, 0.5);
 }
 #title {
-    /* font-style: normal;*/
-  
-  font-size:50px;
+  font-size: 30px;
   text-align: center;
   font-family: sans-serif;
   font-style: normal;
-  font-weight:900; 
-
- 
+  font-weight: 900;
 }
 #description {
   font-size: 14px;
@@ -24,11 +20,9 @@ body {
   text-align: center;
 }
 #survey-form {
-    text-align: center
-  border: ;
   background-color: rgba(0, 0, 0, 0.8);
   width: 30%;
-  margin:auto;
+  margin: auto;
 }
 .box {
   padding-top: 10px;
@@ -40,21 +34,26 @@ body {
 #content {
   margin-top: 10px;
   width: 70%;
-  height: 30px;
+  height: 25px;
 }
-#comments{
-    width: 70%;
-    height: 50px;
+#content {
+  height: 20px;
+}
+#comments {
+  margin-top: 10px;
+  width: 70%;
+  height: 50px;
 }
 #submit input {
   border: white;
   border-radius: 10px;
-  width: 85px;
+  width: 100px;
   height: 25px;
   color: white;
   background-color: red;
   cursor: pointer;
   padding-top: 10px;
+  margin-bottom: 15px;
 }
 #submit {
   text-align: center;
