@@ -9,12 +9,12 @@
   <body>
     <div id="container">
       <h1 id="title">
-        NET<span style="color: orange;">F<small>LIX</small></span>
+        NET<span style="color: #fe0000;">F<small>LIX</small></span>
       </h1>
       <p id="description">
         Thank you for signing up at Netflix.Tell us more about your self
       </p>
-      <form action="" id="survey-form">
+      <form action="" id="survey-form" onsubmit="jsFunction()">
         <div class="box">
           <label for="name">Name</label><br />
           <input
@@ -22,6 +22,7 @@
             id="name"
             name="name"
             placeholder="Enter your name"
+            value=""
           /><br />
         </div>
         <div class="box">
@@ -78,10 +79,25 @@
         </div>
         <div class="box">
           <label for="comments">Feed back</label><br />
-          <textarea name="comments" id="comments">Any comment</textarea>
+          <textarea
+            name="comments"
+            id="comments"
+            placeholder="Any comment"
+          ></textarea>
         </div>
-        <div id="submit"><input type="submit" /></div>
+        <div id="submit"><input type="submit" value="Submit" /></div>
       </form>
     </div>
+    <div id="submittedinfo"></div>
+    <script>
+      // <input type="text" name="name" id="uniqueID" value="value" />
+      const nameValue = document.getElementById("name").value;
+      function jsFunction(params) {
+        new_element = document.getElementById("submittedinfo");
+        new_element.innerHTML = params;
+        return new_element;
+      }
+      jsFunction(nameValue);
+    </script>
   </body>
 </html>
