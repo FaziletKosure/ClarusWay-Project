@@ -14,12 +14,17 @@
       <p id="description">
         Thank you for signing up at Netflix.Tell us more about your self
       </p>
-      <form action="" id="survey-form" onsubmit="jsFunction()">
+      <form
+        action=""
+        id="survey-form"
+        name="myForm"
+        onsubmit="return submitForm()"
+      >
         <div class="box">
           <label for="name">Name</label><br />
           <input
             type="text"
-            id="name"
+            id="fname"
             name="name"
             placeholder="Enter your name"
             value=""
@@ -59,13 +64,13 @@
           />Comedy<br />
           <input
             type="checkbox"
-            id="movie"
+            id="movie1"
             name="movie"
             value="action"
           />Action<br />
           <input
             type="checkbox"
-            id="movie"
+            id="movie2"
             name="movie"
             value="romance"
             checked
@@ -88,16 +93,19 @@
         <div id="submit"><input type="submit" value="Submit" /></div>
       </form>
     </div>
-    <div id="submittedinfo"></div>
+    <p id="submittedinfo"></p>
     <script>
-      // <input type="text" name="name" id="uniqueID" value="value" />
-      const nameValue = document.getElementById("name").value;
-      function jsFunction(params) {
+      function submitForm(event) {
+        let name1 = document.getElementById("fname").value;
+        let name2 = document.getElementById("age").value;
         new_element = document.getElementById("submittedinfo");
-        new_element.innerHTML = params;
-        return new_element;
+        new_element.innerHTML = name1;
+        if (name2 == "") {
+          alert("Name must be filled out");
+          return false;
+        }
+        event.preventDefault();
       }
-      jsFunction(nameValue);
     </script>
   </body>
 </html>
