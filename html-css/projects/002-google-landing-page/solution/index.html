@@ -5,9 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Google-landing-page</title>
     <link rel="stylesheet" href="style.css" />
+    <link rel="shortcut icon" href="images/gfavicon.png" type="image/x-icon" />
   </head>
   <body>
-    <header>
+    <header class="header">
       <nav class="header-left">
         <ul>
           <li>About</li>
@@ -16,16 +17,73 @@
       </nav>
       <nav class="header-right">
         <ul>
-          <li>Gmail</li>
-          <li>Images</li>
           <li>
-            <img src="./images/icon-menu.jpg" alt="icon-menu" width="40" />
+            <a
+              class="gb_g"
+              data-pid="23"
+              href="https://mail.google.com/mail/?tab=rm&amp;ogbl"
+              target="_top"
+              >Gmail</a
+            >
           </li>
-          <li><button>Sign In</button></li>
+          <li>
+            <a
+              class="gb_g"
+              data-pid="2"
+              href="https://www.google.be/imghp?hl=en&amp;tab=ri&amp;ogbl"
+              target="_top"
+              >Images</a
+            >
+          </li>
+          <li>
+            <img src="./images/icon-menu.jpg" alt="icon-menu" width="20" />
+          </li>
+          <li>Sign In</li>
         </ul>
       </nav>
     </header>
-    <dev class="searchbar"></dev>
-    <footer></footer>
+    <div class="searchbar">
+      <img
+        class="google_icon"
+        src="./images/googlelogo.png"
+        alt="googlelogo"
+        width="200"
+      />
+
+      <div class="search">
+        <img
+          class="search-icon"
+          src="./images/Magnifying_glass_icon.png"
+          alt=" search_icon"
+          width="17"
+        />
+        <button></button>
+        <img
+          class="microphone-icon"
+          src="./images/google_microphone.png"
+          alt="microphne_icon"
+          width="13"
+        />
+      </div>
+
+      <ul>
+        <li><a href="#">Google Search</a></li>
+        <li><a href="#">I'm Feeling Lucky</a></li>
+      </ul>
+      <p>
+        Other Languages you can use Google:
+        <a href="#" target="_blank">English</a>
+      </p>
+    </div>
+
+    <footer>
+      <p>Turkey</p>
+      <hr />
+      <ul>
+        <i>Advertising</i>
+        <i>Business</i>
+        <i>How Search Works</i>
+      </ul>
+    </footer>
   </body>
 </html>
