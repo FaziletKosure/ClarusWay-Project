@@ -4,6 +4,10 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Survey Form</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Passion+One:wght@400;700&family=Roboto&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
@@ -15,13 +19,13 @@
         Thank you for signing up at Netflix.Tell us more about your self
       </p>
       <form
-        action=""
+        action="result.html"
         id="survey-form"
         name="myForm"
         onsubmit="return submitForm()"
       >
         <div class="box">
-          <label for="name">Name</label><br />
+          <label for="fname">Name</label><br />
           <input
             type="text"
             id="fname"
@@ -46,12 +50,12 @@
         <div class="box">
           <label for="content">Content type</label><br />
           <select name="content" id="content">
-            <option value="narcos">Narcos</option>
-            <option value="shooter">Shooter</option>
+            <option value="narcos">Movie</option>
+            <!-- <option value="shooter">Shooter</option> -->
             <option value="series" selected>Series</option>
-            <option value="ourplanet">Our Planet</option>
+            <!-- <option value="ourplanet">Our Planet</option>
             <option value="lucifer">Lucifer</option>
-            <option value="tallgirl">Tallgirl</option> </select
+            <option value="tallgirl">Tallgirl</option>  --> </select
           ><br />
         </div>
         <div class="box">
