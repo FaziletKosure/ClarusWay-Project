@@ -36,9 +36,11 @@
             >
           </li>
           <li>
-            <img src="./images/icon-menu.jpg" alt="icon-menu" width="20" />
+            <a href="#" target="_blank" id="icon"
+              ><img src="./images/icon-menu.jpg" alt="icon-menu" width="30"
+            /></a>
           </li>
-          <li>Sign In</li>
+          <li><button id="sign-in">Sign In</button></li>
         </ul>
       </nav>
     </header>
@@ -52,24 +54,29 @@
 
       <div class="search">
         <img
-          class="search-icon"
-          src="./images/Magnifying_glass_icon.png"
+          id="search-icon"
+          src="./images/magnifying_glass.jpg"
           alt=" search_icon"
-          width="17"
+          width="35"
         />
-        <button></button>
+        <input
+          type="search"
+          name="search"
+          id="search-input"
+          autocomplete="off"
+        />
         <img
-          class="microphone-icon"
+          id="mic-icon"
           src="./images/google_microphone.png"
           alt="microphne_icon"
           width="13"
         />
       </div>
 
-      <ul>
-        <li><a href="#">Google Search</a></li>
-        <li><a href="#">I'm Feeling Lucky</a></li>
-      </ul>
+      <div class="btn-cont">
+        <button id="btn1" type="button" name="button">Google Search</button>
+        <button id="btn2" type="button" name="button">I'm Feeling Lucky</button>
+      </div>
       <p>
         Other Languages you can use Google:
         <a href="#" target="_blank">English</a>
@@ -78,12 +85,18 @@
 
     <footer>
       <p>Turkey</p>
-      <hr />
-      <ul>
-        <i>Advertising</i>
-        <i>Business</i>
-        <i>How Search Works</i>
-      </ul>
+      <div id="footer-nav">
+        <nav class="footer-left">
+          <a href="#">Advertising</a>
+          <a href="#">Business</a>
+          <a href="#">How Search Works</a>
+        </nav>
+        <nav class="footer-right">
+          <a href="#">Privacy</a>
+          <a href="#">Terms</a>
+          <a href="#">Settings</a>
+        </nav>
+      </div>
     </footer>
   </body>
 </html>
