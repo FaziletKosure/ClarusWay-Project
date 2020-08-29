@@ -7,7 +7,7 @@
   </head>
   <body>
     <header>
-      <h2>Clarusway Survey Form</h2>
+      <h2 style="font-weight: 100px;">Clarusway Survey Form</h2>
       <h5>Thank you for taking the time to help us improve the platform</h5>
     </header>
     <form action="result.html" method="GET">
@@ -92,15 +92,17 @@
         value="Additional Courses"
       />Additional Courses <br /><br />
       <label for="comment">Any comments or suggestions</label><br /><br />
+      <div>
       <textarea
         name="comment"
         id="comment"
-        cols="30"
-        rows="10"
+        size
+        resize="none"
+        overflow-y="scroll"
         placeholder="Enter your comment here...Thanks for your"
-      ></textarea
-      ><br /><br />
-      <input type="submit" value="Submit" />
+      ></textarea>
+
+      <input style="border: none; width: 60px;height: 25px;" type="submit" value="Submit" />
     </form>
   </body>
 </html>
